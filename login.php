@@ -10,9 +10,10 @@ $message=array('message'=>'success');
 
 if(($data->userName==123)&&($data->passWord==123))
 {
-    echo json_encode($message);
+
     $_SESSION['name']=$data->userName;
     $_SESSION['password']=$data->passWord;
+     echo json_encode($message);
 }
 else
 {
